@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA07994D26A57AF3005BE75A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07994C26A57AF3005BE75A /* AppDelegate.m */; };
+		DA07995026A57AF3005BE75A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07994F26A57AF3005BE75A /* SceneDelegate.m */; };
+		DA07995326A57AF3005BE75A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07995226A57AF3005BE75A /* ViewController.m */; };
+		DA07995626A57AF3005BE75A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA07995426A57AF3005BE75A /* Main.storyboard */; };
+		DA07995826A57AF4005BE75A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA07995726A57AF4005BE75A /* Assets.xcassets */; };
+		DA07995B26A57AF4005BE75A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA07995926A57AF4005BE75A /* LaunchScreen.storyboard */; };
+		DA07995E26A57AF4005BE75A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07995D26A57AF4005BE75A /* main.m */; };
+		DA07996826A57AF4005BE75A /* BWFindWildPointerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07996726A57AF4005BE75A /* BWFindWildPointerTests.m */; };
+		DA07997326A57AF4005BE75A /* BWFindWildPointerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07997226A57AF4005BE75A /* BWFindWildPointerUITests.m */; };
+		DA07998626A57D14005BE75A /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = DA07998526A57D14005BE75A /* fishhook.c */; };
+		DA07998926A57D5B005BE75A /* BWWildPointerChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07998826A57D5B005BE75A /* BWWildPointerChecker.m */; };
+		DA07998C26A57D7C005BE75A /* BWZombieObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07998B26A57D7C005BE75A /* BWZombieObject.m */; };
+		DA07999026A5825F005BE75A /* UnRetainVc.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07998F26A5825F005BE75A /* UnRetainVc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA07996426A57AF4005BE75A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA07994026A57AF3005BE75A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA07994726A57AF3005BE75A;
+			remoteInfo = BWFindWildPointer;
+		};
+		DA07996F26A57AF4005BE75A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA07994026A57AF3005BE75A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA07994726A57AF3005BE75A;
+			remoteInfo = BWFindWildPointer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA07994826A57AF3005BE75A /* BWFindWildPointer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BWFindWildPointer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA07994B26A57AF3005BE75A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA07994C26A57AF3005BE75A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA07994E26A57AF3005BE75A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		DA07994F26A57AF3005BE75A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		DA07995126A57AF3005BE75A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DA07995226A57AF3005BE75A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DA07995526A57AF3005BE75A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA07995726A57AF4005BE75A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA07995A26A57AF4005BE75A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA07995C26A57AF4005BE75A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA07995D26A57AF4005BE75A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA07996326A57AF4005BE75A /* BWFindWildPointerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BWFindWildPointerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA07996726A57AF4005BE75A /* BWFindWildPointerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWFindWildPointerTests.m; sourceTree = "<group>"; };
+		DA07996926A57AF4005BE75A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA07996E26A57AF4005BE75A /* BWFindWildPointerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BWFindWildPointerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA07997226A57AF4005BE75A /* BWFindWildPointerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWFindWildPointerUITests.m; sourceTree = "<group>"; };
+		DA07997426A57AF4005BE75A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA07998426A57D14005BE75A /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		DA07998526A57D14005BE75A /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		DA07998726A57D5B005BE75A /* BWWildPointerChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWWildPointerChecker.h; sourceTree = "<group>"; };
+		DA07998826A57D5B005BE75A /* BWWildPointerChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWWildPointerChecker.m; sourceTree = "<group>"; };
+		DA07998A26A57D7C005BE75A /* BWZombieObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWZombieObject.h; sourceTree = "<group>"; };
+		DA07998B26A57D7C005BE75A /* BWZombieObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWZombieObject.m; sourceTree = "<group>"; };
+		DA07998E26A5825F005BE75A /* UnRetainVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnRetainVc.h; sourceTree = "<group>"; };
+		DA07998F26A5825F005BE75A /* UnRetainVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnRetainVc.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA07994526A57AF3005BE75A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA07996026A57AF4005BE75A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA07996B26A57AF4005BE75A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA07993F26A57AF3005BE75A = {
+			isa = PBXGroup;
+			children = (
+				DA07994A26A57AF3005BE75A /* BWFindWildPointer */,
+				DA07996626A57AF4005BE75A /* BWFindWildPointerTests */,
+				DA07997126A57AF4005BE75A /* BWFindWildPointerUITests */,
+				DA07994926A57AF3005BE75A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA07994926A57AF3005BE75A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA07994826A57AF3005BE75A /* BWFindWildPointer.app */,
+				DA07996326A57AF4005BE75A /* BWFindWildPointerTests.xctest */,
+				DA07996E26A57AF4005BE75A /* BWFindWildPointerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA07994A26A57AF3005BE75A /* BWFindWildPointer */ = {
+			isa = PBXGroup;
+			children = (
+				DA07998D26A57F92005BE75A /* VCs */,
+				DA07998026A57BA6005BE75A /* Tools */,
+				DA07994B26A57AF3005BE75A /* AppDelegate.h */,
+				DA07994C26A57AF3005BE75A /* AppDelegate.m */,
+				DA07994E26A57AF3005BE75A /* SceneDelegate.h */,
+				DA07994F26A57AF3005BE75A /* SceneDelegate.m */,
+				DA07995126A57AF3005BE75A /* ViewController.h */,
+				DA07995226A57AF3005BE75A /* ViewController.m */,
+				DA07995426A57AF3005BE75A /* Main.storyboard */,
+				DA07995726A57AF4005BE75A /* Assets.xcassets */,
+				DA07995926A57AF4005BE75A /* LaunchScreen.storyboard */,
+				DA07995C26A57AF4005BE75A /* Info.plist */,
+				DA07995D26A57AF4005BE75A /* main.m */,
+			);
+			path = BWFindWildPointer;
+			sourceTree = "<group>";
+		};
+		DA07996626A57AF4005BE75A /* BWFindWildPointerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA07996726A57AF4005BE75A /* BWFindWildPointerTests.m */,
+				DA07996926A57AF4005BE75A /* Info.plist */,
+			);
+			path = BWFindWildPointerTests;
+			sourceTree = "<group>";
+		};
+		DA07997126A57AF4005BE75A /* BWFindWildPointerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA07997226A57AF4005BE75A /* BWFindWildPointerUITests.m */,
+				DA07997426A57AF4005BE75A /* Info.plist */,
+			);
+			path = BWFindWildPointerUITests;
+			sourceTree = "<group>";
+		};
+		DA07998026A57BA6005BE75A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DA07998426A57D14005BE75A /* fishhook.h */,
+				DA07998526A57D14005BE75A /* fishhook.c */,
+				DA07998726A57D5B005BE75A /* BWWildPointerChecker.h */,
+				DA07998826A57D5B005BE75A /* BWWildPointerChecker.m */,
+				DA07998A26A57D7C005BE75A /* BWZombieObject.h */,
+				DA07998B26A57D7C005BE75A /* BWZombieObject.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		DA07998D26A57F92005BE75A /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				DA07998E26A5825F005BE75A /* UnRetainVc.h */,
+				DA07998F26A5825F005BE75A /* UnRetainVc.m */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA07994726A57AF3005BE75A /* BWFindWildPointer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA07997726A57AF4005BE75A /* Build configuration list for PBXNativeTarget "BWFindWildPointer" */;
+			buildPhases = (
+				DA07994426A57AF3005BE75A /* Sources */,
+				DA07994526A57AF3005BE75A /* Frameworks */,
+				DA07994626A57AF3005BE75A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BWFindWildPointer;
+			productName = BWFindWildPointer;
+			productReference = DA07994826A57AF3005BE75A /* BWFindWildPointer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA07996226A57AF4005BE75A /* BWFindWildPointerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA07997A26A57AF4005BE75A /* Build configuration list for PBXNativeTarget "BWFindWildPointerTests" */;
+			buildPhases = (
+				DA07995F26A57AF4005BE75A /* Sources */,
+				DA07996026A57AF4005BE75A /* Frameworks */,
+				DA07996126A57AF4005BE75A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA07996526A57AF4005BE75A /* PBXTargetDependency */,
+			);
+			name = BWFindWildPointerTests;
+			productName = BWFindWildPointerTests;
+			productReference = DA07996326A57AF4005BE75A /* BWFindWildPointerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA07996D26A57AF4005BE75A /* BWFindWildPointerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA07997D26A57AF4005BE75A /* Build configuration list for PBXNativeTarget "BWFindWildPointerUITests" */;
+			buildPhases = (
+				DA07996A26A57AF4005BE75A /* Sources */,
+				DA07996B26A57AF4005BE75A /* Frameworks */,
+				DA07996C26A57AF4005BE75A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA07997026A57AF4005BE75A /* PBXTargetDependency */,
+			);
+			name = BWFindWildPointerUITests;
+			productName = BWFindWildPointerUITests;
+			productReference = DA07996E26A57AF4005BE75A /* BWFindWildPointerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA07994026A57AF3005BE75A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					DA07994726A57AF3005BE75A = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					DA07996226A57AF4005BE75A = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = DA07994726A57AF3005BE75A;
+					};
+					DA07996D26A57AF4005BE75A = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = DA07994726A57AF3005BE75A;
+					};
+				};
+			};
+			buildConfigurationList = DA07994326A57AF3005BE75A /* Build configuration list for PBXProject "BWFindWildPointer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA07993F26A57AF3005BE75A;
+			productRefGroup = DA07994926A57AF3005BE75A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA07994726A57AF3005BE75A /* BWFindWildPointer */,
+				DA07996226A57AF4005BE75A /* BWFindWildPointerTests */,
+				DA07996D26A57AF4005BE75A /* BWFindWildPointerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA07994626A57AF3005BE75A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA07995B26A57AF4005BE75A /* LaunchScreen.storyboard in Resources */,
+				DA07995826A57AF4005BE75A /* Assets.xcassets in Resources */,
+				DA07995626A57AF3005BE75A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA07996126A57AF4005BE75A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA07996C26A57AF4005BE75A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA07994426A57AF3005BE75A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA07999026A5825F005BE75A /* UnRetainVc.m in Sources */,
+				DA07998C26A57D7C005BE75A /* BWZombieObject.m in Sources */,
+				DA07998926A57D5B005BE75A /* BWWildPointerChecker.m in Sources */,
+				DA07995326A57AF3005BE75A /* ViewController.m in Sources */,
+				DA07994D26A57AF3005BE75A /* AppDelegate.m in Sources */,
+				DA07995E26A57AF4005BE75A /* main.m in Sources */,
+				DA07998626A57D14005BE75A /* fishhook.c in Sources */,
+				DA07995026A57AF3005BE75A /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA07995F26A57AF4005BE75A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA07996826A57AF4005BE75A /* BWFindWildPointerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA07996A26A57AF4005BE75A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA07997326A57AF4005BE75A /* BWFindWildPointerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA07996526A57AF4005BE75A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA07994726A57AF3005BE75A /* BWFindWildPointer */;
+			targetProxy = DA07996426A57AF4005BE75A /* PBXContainerItemProxy */;
+		};
+		DA07997026A57AF4005BE75A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA07994726A57AF3005BE75A /* BWFindWildPointer */;
+			targetProxy = DA07996F26A57AF4005BE75A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA07995426A57AF3005BE75A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA07995526A57AF3005BE75A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA07995926A57AF4005BE75A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA07995A26A57AF4005BE75A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA07997526A57AF4005BE75A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA07997626A57AF4005BE75A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA07997826A57AF4005BE75A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6747MGQ837;
+				INFOPLIST_FILE = BWFindWildPointer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bbw.BWFindWildPointer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA07997926A57AF4005BE75A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6747MGQ837;
+				INFOPLIST_FILE = BWFindWildPointer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bbw.BWFindWildPointer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA07997B26A57AF4005BE75A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6747MGQ837;
+				INFOPLIST_FILE = BWFindWildPointerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bbw.BWFindWildPointerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BWFindWildPointer.app/BWFindWildPointer";
+			};
+			name = Debug;
+		};
+		DA07997C26A57AF4005BE75A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6747MGQ837;
+				INFOPLIST_FILE = BWFindWildPointerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bbw.BWFindWildPointerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BWFindWildPointer.app/BWFindWildPointer";
+			};
+			name = Release;
+		};
+		DA07997E26A57AF4005BE75A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6747MGQ837;
+				INFOPLIST_FILE = BWFindWildPointerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bbw.BWFindWildPointerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BWFindWildPointer;
+			};
+			name = Debug;
+		};
+		DA07997F26A57AF4005BE75A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6747MGQ837;
+				INFOPLIST_FILE = BWFindWildPointerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bbw.BWFindWildPointerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BWFindWildPointer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA07994326A57AF3005BE75A /* Build configuration list for PBXProject "BWFindWildPointer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA07997526A57AF4005BE75A /* Debug */,
+				DA07997626A57AF4005BE75A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA07997726A57AF4005BE75A /* Build configuration list for PBXNativeTarget "BWFindWildPointer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA07997826A57AF4005BE75A /* Debug */,
+				DA07997926A57AF4005BE75A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA07997A26A57AF4005BE75A /* Build configuration list for PBXNativeTarget "BWFindWildPointerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA07997B26A57AF4005BE75A /* Debug */,
+				DA07997C26A57AF4005BE75A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA07997D26A57AF4005BE75A /* Build configuration list for PBXNativeTarget "BWFindWildPointerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA07997E26A57AF4005BE75A /* Debug */,
+				DA07997F26A57AF4005BE75A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA07994026A57AF3005BE75A /* Project object */;
+}
